@@ -1,14 +1,16 @@
-import './App.css';
+
 import List from './List';
+import SearchBox from './SearchBox';
+import { robots } from './robots';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="tc">
       <div>
-        <p className='title'>RoboFriends</p>
+        <h1>RoboFriends</h1>
+        <SearchBox />
       </div>
-      <List />
-
+      <List robots={robots}/>
     </div>
     
   );
